@@ -3,59 +3,66 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Dashboard</title>
-    <!--<link href="/img/favicon.ico" rel="shortcut icon" >-->
-    <link href="bootstrap.min.css" rel="stylesheet" media="screen">
-    <style type="text/css">
-      #workspace{
-        font-family: Verdana, Geneva, sans-serif;
-      }
-      .gateway{
-        width: 496px;
-        height: 156px;
-        background-color: #CC3344;
-        border: 2px black solid;
-        margin: 5px;
-      }
-      .com{
-        width: 156px;
-        height: 156px;
-        background-color: #CC3344;
-        border: 2px black solid;
-        float: left;
-        margin: 5px;
-      }
-    </style>
+    <title>tomkaufmann</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
     <!--content-->
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand">HIQUEL CONFIGURATION DASHBOARD</a>
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-12 col-md-9">
+          <div class="jumbotron" style="background-color:#424949">
+            <h1 style="color:#FFFFFF">tomkaufmann - apps</h1>
+            <p style="color:#FFFFFF">various apps for embedded systems are presented on this page</p>
+          </div>
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <h2>Serial Debug Terminal</h2>
+              <p>serial terminal to debug embedded systems</p>
+              <p><a class="btn btn-secondary" href="#" role="button">details &raquo;</a></p>
+            </div>
+            <div class="col-6 col-lg-4">
+              <h2>embCalc</h2>
+              <p>calculator for developing embedded systems</p>
+              <p><a class="btn btn-secondary" href="#" role="button">details &raquo;</a></p>
+            </div>
+            <!--<div class="col-6 col-lg-4">
+              <h2>name</h2>
+              <p>description</p>
+              <p><a class="btn btn-secondary" href="#" role="button">details &raquo;</a></p>
+            </div>
+            <div class="col-6 col-lg-4">
+              <h2>name</h2>
+              <p>description</p>
+              <p><a class="btn btn-secondary" href="#" role="button">details &raquo;</a></p>
+            </div>
+            <div class="col-6 col-lg-4">
+              <h2>name</h2>
+              <p>description</p>
+              <p><a class="btn btn-secondary" href="#" role="button">details &raquo;</a></p>
+            </div>
+            <div class="col-6 col-lg-4">
+              <h2>name</h2>
+              <p>description</p>
+              <p><a class="btn btn-secondary" href="#" role="button">details &raquo;</a></p>
+            </div>-->
+          </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href=/embCalc>embCalc</a></li>
-            <li><a href="/terminal">Serial Debug Terminal</a></li>
-          </ul>
+        <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="#" class="list-group-item">datenschutzerkl&auml;rung</a>
+            <a href="#" class="list-group-item">impressum</a>
+          </div>
         </div>
       </div>
-    </nav>
-    <div id="workspace">
-      <div class="gateway" id="gateway">Gateway</div>
-      <div class="com" id="uart3">UART3</div>
-      <div class="com" id="uart5">UART5</div>
-      <div class="com" id="uart2">UART2</div>
-    </div>
+      <hr>
+      <footer>
+        <p>with &hearts; from austria</p>
+      </footer>
+    </div><!--/.container-->
     <!--content-->
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
