@@ -7,10 +7,11 @@ body {
   margin: 0;
 }
 h1{
-  /*color:#AAACB0;*/
+
 }
 p{
-  /*color:#AAACB0;*/
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 a{
   color:black;
