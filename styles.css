@@ -1,8 +1,15 @@
+body {
+  font-family: system-ui;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 h1{
-  color:#AAACB0;
+  /*color:#AAACB0;*/
 }
 p{
-  color:#AAACB0;
+  /*color:#AAACB0;*/
 }
 a{
   color:black;
