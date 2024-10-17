@@ -10,6 +10,7 @@
   </head>
   <body>
     <h1>Tom Kaufmann</h1>
+    <div id="qrcode"></div>
     <p>nostr:npub1srcwde686jdjvwvygzhnuq93gtl5qh6gxqf29teftce6dc5d03yqrjt599</p>
     <p>Coder and skier from the heart of Europe.</p>
     <p>Likes BTC.</p>
@@ -25,5 +26,14 @@
     <footer>
       <p>with <span style="color:red">&hearts;</span> from Austria</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        var nostrPublicAddress = "npub1srcwde686jdjvwvygzhnuq93gtl5qh6gxqf29teftce6dc5d03yqrjt599";
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: nostrPublicAddress,
+            width: 128,
+            height: 128
+        });
+    </script>
   </body>
 </html>
