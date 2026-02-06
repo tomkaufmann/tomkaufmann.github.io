@@ -21,7 +21,7 @@
       </p>
       <p>
         <strong>Contact:</strong><br>
-        [Deine E-Mail Adresse]
+        <p id="email-box">Loading contact...</p>
       </p>
       <p>
         <strong>Nature and Purpose:</strong><br>
@@ -34,5 +34,16 @@
     <footer>
       <p>with <span style="color:red">&hearts;</span> from Austria</p>
     </footer>
+    <script>
+      (function() {
+        // Deine E-Mail: th.kauf @ web.de
+        var user = "th.kauf";
+        var domain = "web.de";
+        var element = document.getElementById('email-box');
+        
+        var fullAddress = user + "@" + domain;
+        element.innerHTML = '<strong>Contact:</strong><br><a href="mailto:' + fullAddress + '">' + fullAddress + '</a>';
+      })();
+    </script>
   </body>
 </html>
